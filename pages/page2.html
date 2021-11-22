@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style1.css">
+    <title>Pagina de Cadastro</title>
+</head>
+<body>
+    <div class="cadastro"><h1><ins>Página de Cadastro</ins></h1></div>
+    <div class="cadastro-framework">
+        <div class="cadastro-layout">
+            <form action="cadastro.php" method="post">
+                Nome: <input type="text" name="name" id="name">
+                <br><br>
+                Senha: <input type="password" name="password" id="password">
+                <br><br>
+                E-mail: <input type="email" name="email" id="email">
+                <br><br>
+                <div class="pointer">
+                    Sexo: <input type="radio" name="gender" id="male">Masculino <input type="radio" name="gender" id="fame">Feminino
+                    <br><br>
+                    <div class="cadastro-termos">
+                        <br>
+                        <label for="termos">Você concorda com os <a href="https://www.google.com" target="_blank">termos</a>?</label>
+                        <input type="checkbox" name="termos" id="termos">
+                        <br>
+                        <label>
+                            Deseja receber novidades no e-mail?
+                            <input type="checkbox" name="NotiEmail" id="NotiEmail"> 
+                        </label>
+                        
+                    </div>
+                    <br>
+                    <input class="submit" type="submit" value="Fazer Cadastro">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

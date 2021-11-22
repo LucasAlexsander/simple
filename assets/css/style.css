@@ -143,12 +143,11 @@ body {
     width: auto;
     height: auto;
     margin-top: 10px;
-    padding-top: 20px;
 }
 .cadastro-image img {
     width: 100px;
     height: 100px;
-    margin-top: -20px;
+    margin-top: 1px;
     float: left;
     border-radius: 50px;
 }
@@ -160,9 +159,16 @@ body {
     border: 4px solid grey;
     border-right: none;
     border-radius: 20px;
-    margin-top: -65px;
+    margin-top: 30px;
     margin-right: -15px;
     float: right;
+}
+.cadastro-info button:hover {
+    background-color: darkgray;
+    font-size: 31px;
+}
+.cadastro-image {
+    display: inline-block;
 }
 
 .page-cadastro-area .page-cadastro a {

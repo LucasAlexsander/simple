@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&family=Yuji+Mai&display=swap');
+/*DEFINIÇÕES GLOBAIS*/
 * {
     box-sizing: border-box;
     overflow-x: hidden;
 }
+
+/*VARIÁVEIS*/
+:root {
+    --font-color: black;
+    --font-text: 'Raleway', sans-serif;
+    --font-title: 'Yuji Mai', serif;
+}
+
+/*DEFINIÇÃO DO BODY*/
 body {
     font-size: 17px;
     margin: 0;
@@ -178,19 +188,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*TEXTO LIPSUM*/
 
 .formatacao {
@@ -222,20 +219,22 @@ p {
     color: black;
 }
 
+
+
+/*TABELA - DADOS DE SAPATOS*/
+.tabela {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
 .subtitulo {
     text-align: center;
     font-family: 'Yuji Mai' serif;
     text-shadow: 1px 1px 2px #333;
 }
 
-
-/*TABELA*/
-.tabela {
-    margin-top: 40px;
-}
 .tabela-area {
     display: flex;
-    margin-top: 30px;
     justify-content: center; /*Alinhas horizontalmente*/
 }
 .tabela-area td {
@@ -305,9 +304,11 @@ tbody tr:nth-child(even) {
     margin-left: 40px;
 }
 .form-layout {
+    width: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
+    margin: 0px 100px;
 }
 .form-area fieldset {
     border: 2px solid red;
@@ -315,6 +316,11 @@ tbody tr:nth-child(even) {
     height:180px;
     margin-bottom: 20px;
     border-radius: 5px;
+    margin-right: 50px;
+    justify-content: center;
+}
+.form-layout form {
+    width: 600px;
 }
 .form-area legend {
     border: 2px solid red;
@@ -332,12 +338,217 @@ tbody tr:nth-child(even) {
     margin-top: 10px;
 }
 .form-area input[type=submit] {
-    padding: 5px;
-    font-size: 14px;
+    padding: 8px;
+    font-size: 16px;
     border: 2px solid red;
     border-radius: 5px;
-    margin-left: 100px;
+    margin-left: 245px;
     margin-bottom: 50px;
 }
 
 
+/*FUNÇÃO VAR E @MEDIA*/
+.function-area-geral {
+    width: auto;
+    height: auto;
+}
+.function-area-geral .title h2 {
+    font-family: var(--font-text);
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+.function-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.function-area .print,
+.function-area .screen,
+.function-area .landscape,
+.function-area .aspect,
+.function-area .var {
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+.function-area h2 {
+    font-size: 19px;
+    font-family: var(--font-text);
+    font-weight: 300;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #eee;
+}
+.function-area p {
+    margin: 0px 8px;
+}
+
+.function-area .formatacao1 {
+    width: auto;
+    height: auto;
+    padding: 5px 2px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: #eee;
+    margin: 10px 0px;
+}
+.function-area .formatacao1 p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVIDADE*/
+@media (max-width: 600px) {
+    /*GERAL*/
+    body {
+        background-color: lightgrey;
+    }
+    /*AVATAR ÁREA*/
+    .header-area {
+        width: 300px;
+        height: 290px;
+        margin-bottom: 55px;
+    }
+    .header-avatar {
+        width: inherit;
+        height: inherit;
+        padding-top: 10px;
+    }
+    .header-avatar fieldset {
+        margin: 3px;
+    }
+    .header-avatar legend {
+        padding: 3px 20px;   
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }       
+    .avatar-info-area {
+        width: auto;
+        height: 90px;
+        margin: 0;
+    }
+    .avatar-info {
+        margin-left: 83px;
+        width: 182px;
+        height: inherit;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0);
+        color: black;
+        position: absolute;
+        padding-left: 20px;
+    }
+    .avatar-info h5 {
+        margin-left: -5px;
+        font-size: 14px;
+        margin-top: 1px;
+    }
+    .avatar-info p {
+        margin-top: -25px;
+        margin-left: -30px;
+        font-size: 12px;
+        font-weight: 600;
+        color: white;    
+        font-family: 'Raleway', sans-serif;
+        line-height: 20px;
+        color: black;
+    }
+    .header-area .avatar-info a {
+        color: black;
+    }
+    .avatar-image {    
+        margin-left: -155px;
+        float: left;
+    }
+    .avatar-image img{
+        width: 73px;
+        height: 73px;
+        margin-top: 4px;
+    }
+    .header-avatar h2 {
+        font-size: 23px;
+    }
+    .header-avatar h3 {
+        margin-top: -20px;
+        font-size: 16px;
+    }
+
+
+    /*TEXTO LIPSUM*/
+    .formatacao {
+        margin: 0px 10px;
+        margin-bottom: 10px;
+    }
+    
+    .formatacao .texto {
+        margin: 0px 15px;
+    }
+    
+    .formatacao .texto h1 {
+        font-size: 30px;    
+        margin-top: 25px;
+    }
+    
+    .formatacao .texto p {
+        font-size: 14px;
+        margin-top: 2px;
+        margin-bottom: 10px;
+    } 
+
+    /*DADOS DE SAPATO*/
+    .tabela {
+        margin-top: 10px;
+    }
+    .tabela-area {
+        margin-top: 0;
+    }
+    .tabela-dados {
+        margin: 0px 10px;
+    }
+
+    table {
+        border: 2px solid #000;
+        border-radius: 5px;
+        box-shadow: 2px 3px 5px #333;
+    }
+
+    /*FIELDSET AND LEGEND*/
+    .form-area {
+        margin: 0px 10px;
+        margin-left: -2px;
+    }
+    .form-layout {        
+        margin-right: -10px;
+    }       
+    .form-area input[type=submit] {
+        margin-left: 85px;
+    }
+    .form-area fieldset {
+        background-color: #eee;
+    }
+
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Página Inicial </title>
 </head>
 <body>
@@ -21,7 +21,7 @@
                                 Facebook: <a href="https://www.facebook.com/lukas.barbosa.655">Lucas Barbosa</a></p>
                             </div>
                             <div class="avatar-image">
-                                <img src="../assets/image/Avatar.png" alt="">
+                                <img src="assets/image/Avatar.png" alt="">
                             </div>
                         </div>
                         <h2>Olá, eu sou o Lucas A. B. Cruz</h2>
@@ -36,7 +36,7 @@
             <div class="cadastro-info">
                 <h1>Deseja efetuar o cadastro?</h1>
                 <div class="cadastro-image">
-                        <a href="https://github.com/LucasAlexsander" target="_blank"><img src="../assets/image/logo.png" alt=""></a>
+                        <a href="https://github.com/LucasAlexsander" target="_blank"><img src="assets/image/logo.png" alt=""></a>
                 </div>                
                 <button><a href="page2.html">Cadastro&nbsp;&nbsp;&nbsp;</a></button>
             </div>
@@ -130,7 +130,7 @@
         <h2 class="subtitulo">Formulário com Fieldset and Legend:</h2>
         <div class="form-layout">
             <form action="">
-                <fieldset>
+                <fieldset style="float: left;">
                     <legend>Dados Pessoais</legend>
                     <label>
                         Nome: <br>
@@ -141,7 +141,7 @@
                         <input type="text" name="lastname" id="lastname" required minlength="2">
                     </label>
                 </fieldset>
-                <fieldset>
+                <fieldset style="margin-right: -100px;">
                     <legend>Dados Profissionais</legend>
                     <label>
                         Nome da empresa: <br>
@@ -154,6 +154,66 @@
                 </fieldset>
                 <input type="submit" name="" id="">
             </form>
+        </div>
+    </section>
+
+    <!--FUNÇÃO VAR E @MEDIA-->
+    <section class="function-area-geral">
+        <div class="title">
+            <h2>Informações sobre Função VAR e @media</h2>
+        </div>
+        <div class="function-area">
+            <div class="print">
+                <h2>ONLY PRINT:</h2>
+                <p style="margin-top: 10px;">Nesta propriedade podemos definir o que vai aparecer na tela quando a pessoa vai imprimir.</p>
+                    <div class="formatacao1">
+                        <p><strong>Sintaxe:<br>
+                            @media only print (condição) {atributo}</strong></p>
+                    </div>
+                   <p>Podemos remover algumas coisas na tela, para fazer isso, usamos o <strong>display: none</strong> no atributo de uma tag, sendo assim, vai aparecer na tela e não na imprenssão. Um exemplo, na impressão de boletos.</p>
+            </div>
+
+            <div class="screen">
+                <h2>ONLY SCREEN:</h2>
+                <p style="margin-top: 10px;">Nesta propriedade vamos definir o que vai aparecer na tela, isto é, coisas que vão aparecer no navedor, mas quando for imprimir pode aparecer outras coisas.</p>
+                <div class="formatacao1">
+                    <p><strong>Sintaxe:<br>
+                    @media only screen (condição) {atributo}</strong></p>
+                </div>
+                <p>Também podemos remover algumas tags usando o <strong>display:none</strong> em suas propriedades.</p>
+
+            </div>
+
+            <div class="landscape">
+                <h2>ORIENTATION:LANDSCAPE E PORTRAIK:</h2>
+                <p style="margin-top: 10px;">Esta propriedade do @media, ela vai trabalhar na proposição da tela, de um modo que quando a tela do navegador estiver com um número maior na horizontal vai aplicar uma determinada configuração, isso também se aplica na orizontal.</p>
+                <div class="formatacao1">
+                    <p><strong>Sintaxe<br>
+                    @media (orientation: landscape ou portraik) {atributo}</strong></p>
+                </div>
+                <p><strong>landscape:</strong> horizontal <br>
+                <strong>portraik:</strong> vertical</p>
+            </div>
+
+            <div class="aspect">
+                <h2>ASPECT-RADIO:</h2>
+                <p style="margin-top: 10px;">Define o tamanho da tela para aplicar algumas caracteristicas. Ela lembra bem padrão do @media com o min e max, mas o aspect-radio tem uma caracteristica única, sendo a forma com que o valor é implementado.</p>
+                <div class="formatacao1">
+                    <p><strong>Sintaxe: <br>
+                    @media (aspect-radio: 1/1) {atributo}</strong></p>
+                </div>
+                <p>Onde neste caso <strong>1/1</strong> significa Altura/Largura, portanto, temos um quadrado.</p>
+            </div>
+
+            <div class="var">
+                <h2>VAR:</h2>
+                <p style="margin-top: 10px;">O <strong>var</strong> ela é usada para criar um variável. Primeiramente, para criarmos uma variável devemos colocar <strong>--</strong> e seguindo do seu nome, por fim, vamos adicionar o seu atributo. Feitos esses passos vamos ter uma variável.</p>
+                <div class="formatacao1">
+                    <p><strong>Sintaxe: <br>
+                    --bg-color: red;</strong></p>
+                </div>
+                <p>Podemos criar uma variável dentro de alguma div, mas ela funconará somente nela mesmo e nos seus filhos. E usamos o <strong>:root{ }</strong> global.</p>
+            </div>
         </div>
     </section>
 </body>

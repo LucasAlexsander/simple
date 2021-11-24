@@ -405,6 +405,9 @@ tbody tr:nth-child(even) {
 
 
 /*VIDEO*/
+.formatacao1 { 
+    font-family: var(--font-text);
+}
 .video {
     width: 100%;
     max-width: 800px;

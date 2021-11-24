@@ -405,7 +405,7 @@ tbody tr:nth-child(even) {
 
 
 /*VIDEO*/
-.formatacao1 { 
+.framework-video .formatacao1 { 
     font-family: var(--font-text);
 }
 .video {

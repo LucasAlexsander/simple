@@ -44,16 +44,19 @@ p {
 }
 
 /*CADASTRO*/
+.cadastro {
+    text-align: center;
+}
 .cadastro h1 {
     display: inline-flex;
-    margin-left: 36%;
-    justify-content: center;
     text-shadow: 1px 1px 3px #999;
 }
 .cadastro-framework {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    height: 350px;
 }
 
 .cadastro-layout {
